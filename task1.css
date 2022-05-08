@@ -1,0 +1,13 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+.container {
+    margin: 0 auto;
+    max-width: 1250px;
+}
+
+.svg {
+    width: 350px;
+    height: 350px;
+}

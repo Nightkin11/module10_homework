@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module 10 homework</title>
+    <link rel="stylesheet" href="./task3.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Task 3</h1>
+        <p>Реализовать чат на основе эхо-сервера wss://echo-ws-service.herokuapp.com.
+            <br>Интерфейс состоит из input, куда вводится текст сообщения, и кнопки «Отправить».
+            <br>При клике на кнопку «Отправить» сообщение должно появляться в окне переписки.
+            <br>Эхо-сервер будет отвечать вам тем же сообщением, его также необходимо выводить в чат:
+            <br>Добавить в чат механизм отправки гео-локации:
+            <br>При клике на кнопку «Гео-локация» необходимо отправить данные серверу и в чат вывести ссылку на
+            https://www.openstreetmap.org/ с вашей гео-локацией. Сообщение, которое отправит обратно эхо-сервер, не
+            выводить.
+        </p>
+        <div class="chat-container">
+            <div class="chat-input-container">
+                <input class="chat-input" type="text" placeholder="Здесь вводится текст сообщения">
+                <button class="btn chat-btn-send">Отправить</button>
+                <button class="btn chat-btn-geo">Геолокация</button>
+            </div>
+            <div class="chat-output" id="output">
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <button onclick="window.location.href = './index.html'">Назад в меню</button>
+    </div>
+    <script src="./task3.js"></script>
+</body>
+
+</html>
