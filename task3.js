@@ -21,14 +21,13 @@ function writeToScreen(message) {
 
 let websocket;
 
-function start() {
+// function start() {
     websocket = new WebSocket(wsUri);
     websocket.onopen = function (evt) {
         writeToScreen(`<span class="recieve-message">Connected</span>`);
     };
     websocket.onclose = function (evt) {
         writeToScreen(`<span class="recieve-message">Disconnected</span>`);
-        start();
       };
     websocket.onmessage = function (evt) {
         writeToScreen(
@@ -40,9 +39,9 @@ function start() {
             '<span class="recieve-message">Ошибка:</span> ' + evt.data
         );
     };
-};
+// };
 
-start();
+// start();
 
 
 // Функция, выводящая текст об ошибке
