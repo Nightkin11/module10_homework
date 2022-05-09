@@ -14,7 +14,7 @@ window.onload = function(){
 
 function writeToScreen(message) {
     let pre = document.createElement("p");
-    // pre.style.wordWrap = "break-word";
+    pre.style.margin = "8px";
     pre.innerHTML = message;
     output.appendChild(pre);
 }
